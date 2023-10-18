@@ -1,8 +1,17 @@
 # TWA
 
-## Description
-
 Telegram Web App example
+
+![CI](https://github.com/tzuyi0817/TWA/actions/workflows/ci.yml/badge.svg)
+![CD](https://github.com/tzuyi0817/TWA/actions/workflows/cd.yml/badge.svg)
+
+## Import Web Pages Into Telegram Bot
+
+- Telegram to join BotFather
+- Enter `/newbot` and follow the instructions to create a robot
+- Enter `/mybots` and select the robot you just created
+- Select `Bot Settings > Menu Button`, then paste the web page you just created and enter the button title
+- You should be able to see the button when you join the robot you just created. After clicking it, you will see the web page you just created.
 
 ## Project Files
 
