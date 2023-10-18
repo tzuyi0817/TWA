@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import IndexPage from '@/pages/IndexPage.vue';
+import Index from '@/pages/IndexPage.vue';
+import Telegram from '@/pages/TelegramPage.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -8,9 +9,16 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/',
-    component: IndexPage,
+    component: Index,
     meta: {
       title: 'Vue3 Coding Standards',
+    },
+  },
+  {
+    path: '/telegram',
+    component: Telegram,
+    meta: {
+      title: 'Telegram',
     },
   },
 ];
