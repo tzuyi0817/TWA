@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 export default defineConfig({
-  base: './',
+  base: '/TWA/',
   plugins: [
     vue(),
     Components({

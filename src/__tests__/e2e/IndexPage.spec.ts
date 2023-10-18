@@ -44,6 +44,6 @@ test('click Volar link open language-tools github blank tab', async ({ page, con
   const newPage = await context.waitForEvent('page');
   await newPage.waitForLoadState();
   await expect(newPage).toHaveTitle(
-    'GitHub - vuejs/language-tools: ⚡ High-performance Vue language tooling based-on Volar.js'
+    'GitHub - vuejs/language-tools: ⚡ High-performance Vue language tooling based-on Volar.js',
   );
 });

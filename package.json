@@ -1,6 +1,6 @@
 {
-  "name": "coding-standards",
-  "version": "1.1.2",
+  "name": "twa",
+  "version": "1.0.0",
   "license": "MIT",
   "type": "module",
   "scripts": {

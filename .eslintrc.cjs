@@ -45,8 +45,8 @@ module.exports = {
       files: ['**/__tests__/unit/**/*.test.[jt]s?(x)'],
       extends: ['plugin:testing-library/vue'],
       rules: {
-        'testing-library/await-async-query': 'error',
-        'testing-library/no-await-sync-query': 'error',
+        'testing-library/await-async-queries': 'error',
+        'testing-library/no-await-sync-queries': 'error',
         'testing-library/no-debugging-utils': 'warn',
         'testing-library/no-dom-import': 'off',
       },

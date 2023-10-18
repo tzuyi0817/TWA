@@ -13,5 +13,5 @@ export default mergeConfig(
       root: fileURLToPath(new URL('./', import.meta.url)),
       setupFiles: ['src/__tests__/setup/unitTest.ts'],
     },
-  }) as UserConfig
+  }) as UserConfig,
 );
