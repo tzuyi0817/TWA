@@ -1,7 +1,7 @@
 import WebApp from '@twa-dev/sdk';
 import router from '@/router';
 
-const isWebApp = !WebApp.initData;
+const isWebApp = !!WebApp.initData;
 
 WebApp.ready();
 WebApp.isClosingConfirmationEnabled = true;
