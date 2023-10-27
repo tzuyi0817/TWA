@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import Index from '@/pages/IndexPage.vue';
-import Telegram from '@/pages/TelegramPage.vue';
+import Twa from '@/pages/TwaPage.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -15,16 +15,16 @@ const routes: Array<RouteRecordRaw> = [
     },
   },
   {
-    path: '/telegram',
-    component: Telegram,
+    path: '/twa',
+    component: Twa,
     meta: {
-      title: 'Telegram',
+      title: 'TWA',
     },
   },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 });
 

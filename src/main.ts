@@ -8,7 +8,7 @@ import '@/styles/index.postcss';
 import App from './App.vue';
 import router from '@/router';
 import i18NPlugin from '@/plugins/i18n';
-import '@/plugins/telegram';
+import '@/plugins/twa';
 
 if (process.env.NODE_ENV === 'mockServiceWorker') {
   const { worker } = await import('@/mocks/browser');
