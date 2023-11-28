@@ -21,7 +21,7 @@
     "pinia": "^2.1.4",
     "pinia-plugin-persistedstate": "^3.1.0",
     "vue": "^3.3.4",
-    "vue-i18n": "9.7.0",
+    "vue-i18n": "9.8.0",
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
@@ -45,7 +45,7 @@
     "eslint-plugin-security": "^1.7.1",
     "eslint-plugin-testing-library": "^6.0.0",
     "eslint-plugin-vue": "^9.15.1",
-    "jsdom": "^22.1.0",
+    "jsdom": "^23.0.0",
     "msw": "^2.0.0",
     "postcss": "^8.4.31",
     "postcss-import": "^15.1.0",
