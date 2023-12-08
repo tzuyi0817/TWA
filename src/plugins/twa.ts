@@ -5,6 +5,7 @@ const isWebApp = !!WebApp.initData;
 
 WebApp.ready();
 WebApp.isClosingConfirmationEnabled = true;
+WebApp.expand();
 
 function redirectBack() {
   router.back();
