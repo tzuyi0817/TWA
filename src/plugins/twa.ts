@@ -6,6 +6,7 @@ const isWebApp = !!WebApp.initData;
 WebApp.ready();
 WebApp.isClosingConfirmationEnabled = true;
 WebApp.expand();
+WebApp.setHeaderColor('#19191e');
 
 function redirectBack() {
   router.back();
