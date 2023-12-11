@@ -15,6 +15,19 @@ function setInitData() {
   initDataUnsafe.value = WebApp.initDataUnsafe;
 }
 
+function refreshWebApp() {
+  WebApp.showPopup(
+    {
+      title: '錯誤訊息',
+      message: '請刷新頁面, 重新嘗試',
+      buttons: [{ id: 'default', type: 'default', text: '確認' }],
+    },
+    function () {
+      window.location.reload();
+    },
+  );
+}
+
 onMounted(() => {
   showBackButton();
   showMainButton(showWebAppAlert);
@@ -38,4 +51,6 @@ onBeforeUnmount(() => {
     <p>initDataUnsafe</p>
     {{ initDataUnsafe }}
   </article>
+
+  <button @click="refreshWebApp">刷新</button>
 </template>
