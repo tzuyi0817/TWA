@@ -6,7 +6,11 @@ const isWebApp = !!WebApp.initData;
 WebApp.ready();
 WebApp.isClosingConfirmationEnabled = true;
 WebApp.expand();
+WebApp.setBackgroundColor('#19191e');
 WebApp.setHeaderColor('#19191e');
+WebApp.onEvent('viewportChanged', () => {
+  window.requestAnimationFrame(() => WebApp.expand());
+});
 
 function redirectBack() {
   router.back();
