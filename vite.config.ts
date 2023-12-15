@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue';
 import { fileURLToPath, URL } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import Components from 'unplugin-vue-components/vite';
+import legacy from '@vitejs/plugin-legacy';
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite';
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 import { version as pkgVersion } from './package.json';
@@ -26,6 +27,29 @@ export default defineConfig({
     }),
     createSvgIconsPlugin({
       iconDirs: [resolve(process.cwd(), 'src/assets/images/svgIcons')],
+    }),
+    legacy({
+      targets: ['defaults', 'safari 12', 'chrome 49'],
+      additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
+      renderLegacyChunks: true,
+      polyfills: [
+        'es.symbol',
+        'es.array.filter',
+        'es.promise',
+        'es.promise.finally',
+        'es/map',
+        'es/set',
+        'es.array.for-each',
+        'es.object.define-properties',
+        'es.object.define-property',
+        'es.object.get-own-property-descriptor',
+        'es.object.get-own-property-descriptors',
+        'es.object.keys',
+        'es.object.to-string',
+        'web.dom-collections.for-each',
+        'es.global-this',
+        'esnext.string.match-all',
+      ],
     }),
   ],
   resolve: {

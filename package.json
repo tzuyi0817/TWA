@@ -33,6 +33,7 @@
     "@testing-library/vue": "^8.0.0",
     "@types/node": "^20.4.2",
     "@types/testing-library__jest-dom": "^5.14.8",
+    "@vitejs/plugin-legacy": "^5.2.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitest/coverage-v8": "^1.0.0",
     "@vue/eslint-config-prettier": "^8.0.0",
