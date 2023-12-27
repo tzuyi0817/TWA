@@ -1,12 +1,11 @@
 name: CD-Pipeline
 
 on:
-  push:
+  workflow_run:
+    workflows: [CI-Pipeline]
     branches: [main]
-    paths:
-      - 'src/**'
-      - 'pnpm-lock.yaml'
-      - '.github/workflows/**'
+    types:
+      - completed
 
 jobs:
   build:
