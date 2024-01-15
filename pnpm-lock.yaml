@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@twa-dev/sdk':
-    specifier: ^6.9.1
-    version: 6.9.1(react@18.2.0)
+    specifier: ^7.0.0
+    version: 7.0.0(react@18.2.0)
   axios:
     specifier: ^1.4.0
     version: 1.4.0
@@ -2289,17 +2289,17 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /@twa-dev/sdk@6.9.1(react@18.2.0):
-    resolution: {integrity: sha512-R+3a/IRG97NFHS1PF+rj/F2n+cwsHtW1LWGVP0pzIzMK709oMy00qJPV0wxbS16hzcvcW9hPVNwHYTPMv4rrEQ==}
+  /@twa-dev/sdk@7.0.0(react@18.2.0):
+    resolution: {integrity: sha512-OZvqGGrdrgE0xU/IGjvsGKKouia5bTu6rA/BOOU6pJYLu776nQJs/HNFl7lwW16RONf1vvPqeV8XximsuzZ9Iw==}
     peerDependencies:
       react: '>=16.0.0'
     dependencies:
-      '@twa-dev/types': 6.9.0
+      '@twa-dev/types': 7.0.0
       react: 18.2.0
     dev: false
 
-  /@twa-dev/types@6.9.0:
-    resolution: {integrity: sha512-hBkIuJgVtkLAPPhKsNfgyBpgS+15spzUScy5jgpfPJPqXPaaUVDTaWHbeEUU+lUgHmryeQjWyz+UjS7987Pyaw==}
+  /@twa-dev/types@7.0.0:
+    resolution: {integrity: sha512-LBnMklxORuXd/ypv9gFKcQVNJkCktkeuU+2V6B5Ww7dcxDCoYBAKkNnIwEQ3cShq+cxTi96jC/CqWhgDMQ7AXQ==}
     dev: false
 
   /@types/aria-query@5.0.1:
