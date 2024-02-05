@@ -21,7 +21,7 @@
     "pinia": "^2.1.4",
     "pinia-plugin-persistedstate": "^3.1.0",
     "vue": "^3.3.4",
-    "vue-i18n": "9.9.0",
+    "vue-i18n": "9.9.1",
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
@@ -77,7 +77,7 @@
   "optionalDependencies": {
     "@commitlint/cli": "^18.0.0",
     "@commitlint/config-conventional": "^18.0.0",
-    "husky": "^8.0.3",
+    "husky": "^9.0.0",
     "lint-staged": "^15.0.0"
   }
 }
