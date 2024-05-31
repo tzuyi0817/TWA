@@ -2,14 +2,13 @@
 /* tslint:disable */
 
 /**
- * Mock Service Worker.
+ * Mock Service Worker (2.0.6).
  * @see https://github.com/mswjs/msw
  * - Please do NOT modify this file.
  * - Please do NOT serve this file on production.
  */
 
-const PACKAGE_VERSION = '2.3.0'
-const INTEGRITY_CHECKSUM = '26357c79639bfa20d64c0efca2a87423'
+const INTEGRITY_CHECKSUM = '0877fcdc026242810f5bfde0d7178db4'
 const IS_MOCKED_RESPONSE = Symbol('isMockedResponse')
 const activeClientIds = new Set()
 
@@ -49,10 +48,7 @@ self.addEventListener('message', async function (event) {
     case 'INTEGRITY_CHECK_REQUEST': {
       sendToClient(client, {
         type: 'INTEGRITY_CHECK_RESPONSE',
-        payload: {
-          packageVersion: PACKAGE_VERSION,
-          checksum: INTEGRITY_CHECKSUM,
-        },
+        payload: INTEGRITY_CHECKSUM,
       })
       break
     }
@@ -125,6 +121,11 @@ async function handleRequest(event, requestId) {
   if (client && activeClientIds.has(client.id)) {
     ;(async function () {
       const responseClone = response.clone()
+      // When performing original requests, response body will
+      // always be a ReadableStream, even for 204 responses.
+      // But when creating a new Response instance on the client,
+      // the body for a 204 response must be null.
+      const responseBody = response.status === 204 ? null : responseClone.body
 
       sendToClient(
         client,
@@ -136,11 +137,11 @@ async function handleRequest(event, requestId) {
             type: responseClone.type,
             status: responseClone.status,
             statusText: responseClone.statusText,
-            body: responseClone.body,
+            body: responseBody,
             headers: Object.fromEntries(responseClone.headers.entries()),
           },
         },
-        [responseClone.body],
+        [responseBody],
       )
     })()
   }
@@ -206,6 +207,13 @@ async function getResponse(event, client, requestId) {
     return passthrough()
   }
 
+  // Bypass requests with the explicit bypass header.
+  // Such requests can be issued by "ctx.fetch()".
+  const mswIntention = request.headers.get('x-msw-intention')
+  if (['bypass', 'passthrough'].includes(mswIntention)) {
+    return passthrough()
+  }
+
   // Notify the client that a request has been intercepted.
   const requestBuffer = await request.arrayBuffer()
   const clientMessage = await sendToClient(
@@ -237,7 +245,7 @@ async function getResponse(event, client, requestId) {
       return respondWithMock(clientMessage.data)
     }
 
-    case 'PASSTHROUGH': {
+    case 'MOCK_NOT_FOUND': {
       return passthrough()
     }
   }
