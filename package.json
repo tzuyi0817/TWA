@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
+  "packageManager": "pnpm@9.1.2",
   "scripts": {
     "dev": "vite",
     "dev:mock": "MOCK=true vite",
