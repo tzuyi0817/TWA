@@ -16,7 +16,7 @@ describe('HelloWorld component', () => {
     expect(screen.getByRole('heading', { name: msg })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /count is 0/i })).toBeInTheDocument();
     expect(screen.getByText(/check out , the official vue \+ vite starter/i)).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /create\-vue/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /create-vue/i })).toBeInTheDocument();
     expect(screen.getByText(/install in your ide for a better dx/i)).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /volar/i })).toBeInTheDocument();
     expect(screen.getByText(/click on the vite and vue logos to learn more/i)).toBeInTheDocument();
@@ -37,7 +37,7 @@ describe('HelloWorld component', () => {
 
   it('link correct attribute', () => {
     renderComponent(HelloWorld, { props: { msg: '' } });
-    const createVueLink = screen.getByRole('link', { name: /create\-vue/i });
+    const createVueLink = screen.getByRole('link', { name: /create-vue/i });
     const volarLink = screen.getByRole('link', { name: /volar/i });
 
     expect(createVueLink).toHaveAttribute('href', 'https://vuejs.org/guide/quick-start.html#local');
