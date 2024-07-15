@@ -37,7 +37,7 @@
     "@types/testing-library__jest-dom": "^6.0.0",
     "@vitejs/plugin-legacy": "^5.4.1",
     "@vitejs/plugin-vue": "^5.0.5",
-    "@vitest/coverage-v8": "^1.6.0",
+    "@vitest/coverage-v8": "^2.0.3",
     "@vue/eslint-config-prettier": "^9.0.0",
     "@vue/eslint-config-typescript": "^13.0.0",
     "autoprefixer": "^10.4.19",
@@ -62,7 +62,7 @@
     "unplugin-vue-components": "^0.27.2",
     "vite": "^5.3.3",
     "vite-plugin-svg-icons": "^2.0.1",
-    "vitest": "^1.6.0",
+    "vitest": "^2.0.3",
     "vue-tsc": "^2.0.26"
   },
   "browserslist": [
