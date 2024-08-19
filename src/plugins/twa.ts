@@ -18,7 +18,7 @@ try {
     });
   });
   WebApp.setHeaderColor('#19191e');
-} catch (error) {
+} catch {
   console.error('WebApp SDK is not available');
 }
 
