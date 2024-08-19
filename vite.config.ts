@@ -1,7 +1,7 @@
-import { defineConfig, type UserConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
 import { fileURLToPath, URL } from 'node:url';
 import { dirname, resolve } from 'node:path';
+import { defineConfig, type UserConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 import Components from 'unplugin-vue-components/vite';
 import legacy from '@vitejs/plugin-legacy';
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite';

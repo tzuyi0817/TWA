@@ -52,5 +52,7 @@ onBeforeUnmount(() => {
     {{ initDataUnsafe }}
   </article>
 
-  <button @click="refreshWebApp">刷新</button>
+  <button @click="refreshWebApp">
+    刷新
+  </button>
 </template>
