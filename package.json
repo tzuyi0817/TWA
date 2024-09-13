@@ -14,7 +14,7 @@
     "test:ui-e2e": "playwright test --ui",
     "test:ci-e2e": "playwright test",
     "ts-check": "bash -c vue-tsc --noEmit",
-    "prepare": "husky install",
+    "prepare": "husky",
     "preview": "vite preview"
   },
   "dependencies": {

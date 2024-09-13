@@ -15,6 +15,6 @@ export default defineStore('coding-standards-config', {
   actions: {},
   persist: {
     storage: localStorage,
-    paths: [],
+    pick: [],
   },
 });
