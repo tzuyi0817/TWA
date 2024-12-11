@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
-  "packageManager": "pnpm@9.14.4",
+  "packageManager": "pnpm@9.15.0",
   "scripts": {
     "dev": "vite",
     "dev:mock": "MOCK=true vite",
@@ -27,13 +27,13 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@component-hook/eslint-plugin": "^0.2.2",
-    "@intlify/unplugin-vue-i18n": "^6.0.0",
-    "@playwright/test": "^1.49.0",
+    "@component-hook/eslint-plugin": "^0.2.3",
+    "@intlify/unplugin-vue-i18n": "^6.0.1",
+    "@playwright/test": "^1.49.1",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/user-event": "^14.5.2",
     "@testing-library/vue": "^8.1.0",
-    "@types/node": "^22.10.1",
+    "@types/node": "^22.10.2",
     "@vitejs/plugin-legacy": "^5.4.3",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vitest/coverage-v8": "^2.1.8",
@@ -42,7 +42,7 @@
     "eslint": "^9.16.0",
     "globals": "^15.13.0",
     "jsdom": "^25.0.1",
-    "msw": "^2.6.7",
+    "msw": "^2.6.8",
     "postcss": "^8.4.49",
     "postcss-import": "^16.1.0",
     "postcss-nesting": "^13.0.1",
@@ -74,6 +74,6 @@
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.10"
+    "lint-staged": "^15.2.11"
   }
 }
