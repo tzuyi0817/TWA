@@ -25,9 +25,7 @@ import HelloWorld from '@/components/indexPage/HelloWorld.vue';
     </a>
   </div>
   <hello-world msg="Vite + Vue" />
-  <router-link to="/twa">
-    TWA
-  </router-link>
+  <router-link to="/twa"> TWA </router-link>
 </template>
 
 <style lang="postcss" scoped>
