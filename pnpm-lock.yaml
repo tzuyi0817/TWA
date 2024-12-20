@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@twa-dev/sdk':
-        specifier: ^7.10.1
-        version: 7.10.1(react@18.3.1)
+        specifier: ^8.0.1
+        version: 8.0.1(react@18.3.1)
       axios:
         specifier: ^1.7.9
         version: 1.7.9
@@ -1343,13 +1343,13 @@ packages:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
 
-  '@twa-dev/sdk@7.10.1':
-    resolution: {integrity: sha512-mY9JaBPspYfLdzoaARVmr0GKXUO3X4hi1vuP+04UUFWST2lB50xGSxExOFz5I3vBaxnrdLregBGiaitvvWaX6w==}
+  '@twa-dev/sdk@8.0.1':
+    resolution: {integrity: sha512-mBR5dnAvSyRx7YGt/n0Owq1z8MsWhsuh76JD1abV0TZWHi6RQSPXBNAG0XMOMO7Vf5hsAwUTul+x54vf43Ku0A==}
     peerDependencies:
       react: ^18.3.1
 
-  '@twa-dev/types@7.10.0':
-    resolution: {integrity: sha512-BXHyNLXy+cPbOZ2qQq5ArPKcP4kUfuX3YBSFT0XUxtMNWAzvyMuYAiq59UTfQ8OnELXlfChrAoIT3c2pujBtcQ==}
+  '@twa-dev/types@8.0.1':
+    resolution: {integrity: sha512-/m3KiULhI4fdeoI5K9Op9jFbmdPjxaAdrZBJ3BA1fS4lVmKCx9XuLTeumzYeuOW577eHAJWaZkcSpWBOss4Epw==}
 
   '@types/aria-query@5.0.4':
     resolution: {integrity: sha512-rfT93uj5s0PRL7EzccGMs3brplhcrghnDoV26NqKhCAS1hVo+WdNsPvE/yb6ilfr5hi2MEk6d5EWJTKdxg8jVw==}
@@ -6652,12 +6652,12 @@ snapshots:
 
   '@trysound/sax@0.2.0': {}
 
-  '@twa-dev/sdk@7.10.1(react@18.3.1)':
+  '@twa-dev/sdk@8.0.1(react@18.3.1)':
     dependencies:
-      '@twa-dev/types': 7.10.0
+      '@twa-dev/types': 8.0.1
       react: 18.3.1
 
-  '@twa-dev/types@7.10.0': {}
+  '@twa-dev/types@8.0.1': {}
 
   '@types/aria-query@5.0.4': {}
 
